@@ -1,12 +1,12 @@
-@mixin rtl($name, $color,$numElem) {
+@mixin clarearColorBase($name, $color,$numElem) {
     @for $i from -$numElem through $numElem {
     
         .#{$name}-#{$i}{
             @if($i<0){
-                background-color: darken($color,1%*-$i+2);
+                background-color: darken($color,4%*-$i);//También se podría pasar un parámetro para el porcentaje
             }
             @else if ($i>0) {
-                background-color: lighten($color,1%*$i+2);
+                background-color: lighten($color,4%*$i);
             }
             @else{
                 background-color: $color

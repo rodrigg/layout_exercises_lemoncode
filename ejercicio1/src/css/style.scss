@@ -12,14 +12,12 @@
         padding:50px 2px 50px 2px;
         margin: 2px;
         text-align: center;
-
-
     }
 }
 
-@include rtl('colorRow1',$colorRoW1,4);
-@include rtl('colorRow2',$colorRoW2,4);
-@include rtl('colorRow3',$colorRoW3,4);
+@include clarearColorBase('colorRow1',$colorRoW1,4);
+@include clarearColorBase('colorRow2',$colorRoW2,4);
+@include clarearColorBase('colorRow3',$colorRoW3,4);
 
 
 
