@@ -1,0 +1,16 @@
+@mixin rtl($name, $color,$numElem) {
+    @for $i from -$numElem through $numElem {
+    
+        .#{$name}-#{$i}{
+            @if($i<0){
+                background-color: darken($color,1%*-$i+2);
+            }
+            @else if ($i>0) {
+                background-color: lighten($color,1%*$i+2);
+            }
+            @else{
+                background-color: $color
+            }
+        }
+    }
+}     
