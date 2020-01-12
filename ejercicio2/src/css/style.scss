@@ -1,0 +1,45 @@
+@import "theme1";
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+    margin:8px;
+    &>div{
+        flex: 1;
+        margin:5px;
+        border-style: solid;
+        border-color: grey;
+        border-width:2px;
+        text-align: center;
+        padding-top: 20px;
+    }
+  }
+
+.base{
+    background-color:$colorBase ;
+}
+.important{
+    background-color:$colorImportant ;
+
+}
+.fonts {
+}
+.warning{
+    background-color:$colorWarning ;
+}
+.boxwithShadow{
+    box-shadow: $boxShadow;
+
+}
+.primaryFont{
+@include primaryFont
+}
+.secondaryFont{
+    @include secondaryFont;
+
+}

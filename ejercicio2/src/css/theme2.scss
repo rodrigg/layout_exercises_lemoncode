@@ -1,0 +1,15 @@
+$colorBase:red;
+$colorImportant:rgb(104, 26, 72);
+$colorWarning:lightpink;
+$boxShadow: -8px 8px 10px 1px black;
+
+
+@mixin  primaryFont {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+@mixin  secondaryFont {
+    font-size: 20px;
+    color: lightpink;
+  }
