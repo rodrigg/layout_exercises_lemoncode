@@ -20,7 +20,6 @@ body{
 .subheader{ 
     display: flex;
     justify-content: space-between;
-    bottom: 0px;
     @media only screen and (max-width: 780px){  
       order:2;
     }  

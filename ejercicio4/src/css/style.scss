@@ -1,0 +1,47 @@
+
+.principal {
+    min-height: 100vh;
+    display: grid;
+    margin: 0px auto ;
+    max-width: 1000px;
+    grid-template-areas:
+    'header contenta contenta'
+    'header contentb contentb';
+    @media only screen and (max-width: 680px){  
+        grid-template-areas:
+        'header'
+        'contenta'
+        'contenta'
+        'contentb'
+        'contentb';
+    }
+}
+
+.header{
+    background-color: lightpink;
+    grid-area: header;
+    display:flex;
+    flex-direction: column;
+    @media only screen and (max-width: 680px){  
+        flex-direction: row;
+    }
+    justify-content: space-evenly;
+
+}
+
+.header-item{
+    display:flex;
+    @media only screen and (max-width: 680px){  
+        align-self: center;
+    }
+}
+
+.contentA{ 
+    background-color: yellow;
+    grid-area: contenta;
+}
+
+.contentB {
+    background-color: blue;
+    grid-area: contentb;
+}
